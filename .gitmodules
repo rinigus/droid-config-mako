@@ -1,4 +1,4 @@
 [submodule "droid-configs-device"]
 	path = droid-configs-device
-	url = https://github.com/mer-hybris/droid-hal-configs
+	url = https://github.com/ballock/droid-hal-configs
 	branch = master
