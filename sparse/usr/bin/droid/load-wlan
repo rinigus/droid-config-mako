@@ -2,7 +2,7 @@
 # This waits ready signal from anrdoid side before loading wlan module
 
 WLAN_READY=/sys/module/wcnsscore/parameters/wlan_smd_ready
-MAX_WAIT=15
+MAX_WAIT=60
 
 i=0
 
@@ -18,6 +18,6 @@ if [ -f $WLAN_READY ]; then
 fi
 
 echo "Ready to load wlan after $i s wait"
-
+sleep 10
 modprobe wlan
 
