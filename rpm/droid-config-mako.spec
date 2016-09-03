@@ -14,5 +14,8 @@
 # We assume most devices will
 %define have_modem 1
 
+# this allows us to disable 4G on mako through config in sparse
+Provides: ofono-configs
+
 %include droid-configs-device/droid-configs.inc
 
